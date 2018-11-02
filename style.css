@@ -1,0 +1,103 @@
+.container
+{
+display:grid; 
+height: 100%;
+grid-gap: 3px;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: auto auto auto;
+grid-template-areas: 
+    "p p p b b b b b b b b b"
+    "p p p s s s s s s s s s"
+    "p p p f f f f f f f f f";  
+}
+
+body{
+    font-family: helvetica, arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+
+}
+
+li{
+    color:#fff
+}
+
+a{
+    text-decoration:none;
+    color: #fff;
+
+}
+a:hover{
+    color:#44d9e6;
+}
+a:active{
+    color:#fff952;
+}
+h1{
+    color:#fff;
+    font-size:20px;
+    font-family: helvetica,arial,sans-serif;
+}
+h2{
+    color:#44d9e6;  
+}
+
+p{
+    color: #fff;
+}
+.picture{
+    grid-area: p;
+ 
+}
+
+.bio
+{
+    grid-area: b;
+}
+.categories ul{
+    padding:10px;
+    list-style: none;
+   
+
+
+}
+.socials
+{
+    grid-area: s;
+}
+
+.footer
+{
+    grid-area: f;
+}
+.my-form{
+    color:#fff;
+    padding:20px;
+   
+}
+.my-form .form-group{
+    padding-bottom:10px;
+
+}
+.my-form label{
+    display:block;
+
+}
+.my-form input[type="text"], .my-form textarea{
+    padding:8px;
+    width:100%;
+
+}
+.my-form input[type="submit"]{
+    background-color: grey;
+    color:#fff;
+    padding:10px 15px;
+    border:none;  
+}
+#linkedin{
+    align-items: center;
+}
+
+
+
+
